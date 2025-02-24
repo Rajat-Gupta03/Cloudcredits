@@ -5,8 +5,8 @@ import json
 ses_client = boto3.client('ses', region_name='ap-south-1')
 
 def lambda_handler(event, context):
-    sender_email = "rajatgupta31302@gmail.com"
-    recipient_emails = ["rajatrg4083@gmail.com", "rjstyle1234567890@gmail.com"]  # List of recipients
+    sender_email = "your_verified_email@example.com"
+    recipient_emails = ["recipient1@example.com", "recipient2@example.com"]  # List of recipients
     subject = "AWS Lambda Mass Email Test"
     body_text = "Hello, this is a test email sent using AWS Lambda and SES."
     
